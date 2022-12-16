@@ -8,4 +8,10 @@ describe('precision zero', function() {
         const result = ceil(testVal);
         expect(result).to.equal(6);
     });
+
+    it('should return next double', function() {
+        const testVal = 3.002;
+        const result = ceil(testVal, 2);
+        expect(result).to.equal(3.01);
+    });
 });
