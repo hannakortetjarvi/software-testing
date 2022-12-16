@@ -30,7 +30,11 @@ jobs:
     - run: mkdir coverage && mkdir coverage/tmp && mkdir coverage/lcov-report
     - run: npm test
     - run: npm run coverage
+    - run: ls
+    - run: ls coverage
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: ./coveralls/lcov.info
+        coveralls-endpoint: https://coveralls.io
