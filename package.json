@@ -1,0 +1,27 @@
+{
+  "name": "software-testing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannakortetjarvi/software-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannakortetjarvi/software-testing/issues"
+  },
+  "homepage": "https://github.com/hannakortetjarvi/software-testing#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
