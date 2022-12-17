@@ -21,12 +21,18 @@ describe('keys.js', () => {
         expect( result      ).to.be.an('array');
         expect( keys('hi')  ).to.be.an('array');
         expect( keys(1)     ).to.be.an('array');
+
+        const b = new ArrayBuffer(16)
+        const i16 = new Int16Array(b);
+        expect( keys(i16)   ).to.be.an('array');
+        expect( keys(b)     ).to.be.an('array');
     });
     
     it('Should return enumerable property names of object', () => {
-        let obj = { test: 2, "key": "value" }
+        const obj = { test: 2, "key": "value" }
         expect( result      ).to.have.members(expectedResult);
         expect( keys(obj)   ).to.have.members(['test', 'key']);
+
     });
     
     it('Should convert input to object and return enumerable property names"', () => {
