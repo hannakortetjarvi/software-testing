@@ -34,12 +34,14 @@ jobs:
     - run: npm run coverage
 
     - name: Mochawesome
+      if: always()
       uses: actions/upload-artifact@v3
       with: 
         name: mochawesome-report
         path: mochawesome-report/
 
     - name: Coveralls
+      if: always()
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
