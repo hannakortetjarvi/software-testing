@@ -1,5 +1,9 @@
 import clamp from '../src/clamp.js';
 import chai from 'chai';
+import Mocha from 'mocha';
+
+const describe = Mocha.describe;
+const it = Mocha.it;
 const expect = chai.expect;
 
 describe('clamp.js', function() {

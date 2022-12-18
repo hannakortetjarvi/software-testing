@@ -1,5 +1,9 @@
 import ceil from '../src/ceil.js';
 import chai from 'chai';
+import Mocha from 'mocha';
+
+const describe = Mocha.describe;
+const it = Mocha.it;
 const expect = chai.expect;
 
 describe('ceil.js', function() {

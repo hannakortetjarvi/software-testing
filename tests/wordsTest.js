@@ -1,9 +1,12 @@
 import words from '../src/words.js';
 import chai from 'chai';
+import Mocha from 'mocha';
 
-const assert = chai.assert;    
+const describe = Mocha.describe;
+const it = Mocha.it;
 const expect = chai.expect;    
-const should = chai.should(); 
+// const should = chai.should(); 
+// const assert = chai.assert;    
 
 describe('words.js', () => {
     const testInput = "fred, barney, & pebbles";

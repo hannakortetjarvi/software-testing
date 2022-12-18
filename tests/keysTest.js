@@ -1,9 +1,12 @@
 import keys from '../src/keys.js';
 import chai from 'chai';
+import Mocha from 'mocha';
 
-const assert = chai.assert;    
+const describe = Mocha.describe;
+const it = Mocha.it;
 const expect = chai.expect;    
-const should = chai.should(); 
+// const assert = chai.assert;    
+// const should = chai.should(); 
 
 describe('keys.js', () => {
     class Foo {
