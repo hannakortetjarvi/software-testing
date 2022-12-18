@@ -9,7 +9,7 @@
   },
   "scripts": {
     "check": "eslint src/ tests/ --ext .js",
-    "test": "mocha tests --reporter mochawesome",
+    "test": "mocha tests/* --reporter mochawesome",
     "coverage": "c8 -x src/.internal/ -x tests/ --reporter=lcov --check-coverage -o coverage npm test"
   },
   "repository": {

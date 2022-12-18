@@ -56,10 +56,18 @@ describe('clamp.js', function() {
     });
 
     it('should be NaN since values are non-numbers', function() {
-        const number = "hello";
+        const string = "hello";
         const lower = "hola";
         const upper = "hei";
-        const result = clamp(number, lower, upper);
+        const result = clamp(string, lower, upper);
         expect(result).to.be.NaN;
+    });
+
+    it('should return lower bound with double', function() {
+        const number = 2.15;
+        const lower = 5.12;
+        const upper = 10.999999;
+        const result = clamp(number, lower, upper);
+        expect(result).to.equal(5.12);
     });
 });
