@@ -33,7 +33,7 @@ describe('login', function() {
 
     it("user shouldn't have spaces in their username or password", function() {
         const user = {
-            username: 'matti meikalainen',
+            username: 'matti.meikalainen',
             password: 'meikalaisenmatti123'
         }
         const resultName = words(user.username, /[ ,]+/).length;
