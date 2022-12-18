@@ -1,8 +1,5 @@
 import ceil from '../src/ceil.js';
 import chai from 'chai';
-
-const describe = chai.describe;
-const it = chai.it;
 const expect = chai.expect;
 
 describe('ceil.js', function() {

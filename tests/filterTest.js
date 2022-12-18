@@ -1,8 +1,5 @@
 import filter from '../src/filter.js';
 import chai from 'chai';
-
-const describe = chai.describe;
-const it = chai.it;
 const expect = chai.expect;
 
 describe('filter.js', function() {
