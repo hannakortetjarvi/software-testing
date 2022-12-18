@@ -1,11 +1,9 @@
 import words from '../src/words.js';
 import chai from 'chai';
 
-const describe = chai.describe;
-const it = chai.it;
+const assert = chai.assert;    
 const expect = chai.expect;    
-// const assert = chai.assert;  
-// const should = chai.should();
+const should = chai.should(); 
 
 describe('words.js', () => {
     const testInput = "fred, barney, & pebbles";

@@ -1,11 +1,9 @@
 import compact from '../src/compact.js';
 import chai from 'chai';
 
-const describe = chai.describe;
-const it = chai.it;
+const assert = chai.assert;    
 const expect = chai.expect;    
-// const assert = chai.assert;    
-// const should = chai.should(); 
+const should = chai.should(); 
 
 describe('compact.js', () => {
     const testInput = Array.of(0, 1, false, 2, '', 3);
