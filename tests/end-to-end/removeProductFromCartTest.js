@@ -13,7 +13,7 @@ describe('remove product from shopping cart', function() {
         let cart = new shoppingCart('1234567890', red_apple.price, [red_apple]);
         const willBeRemoved = red_apple;
         const func = product => {
-            product.id != willBeRemoved.id
+            if (product.id != willBeRemoved.id) return true;
         };
         cart.products = filter(cart.products, func);
         cart.price = reduce(cart.products, sumPrices, 0);

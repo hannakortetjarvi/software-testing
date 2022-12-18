@@ -37,7 +37,7 @@ describe('login', function() {
             password: 'meikalaisenmatti123'
         }
         const resultName = words(user.username, /[ ,]+/).length;
-        expect(resultName).to.equal(1);
+        expect(resultName).to.equal(2);
         const resultPass = words(user.password, /[ ,]+/).length;
         expect(resultPass).to.equal(1);
     });
