@@ -1,9 +1,11 @@
 import capitalize from '../src/capitalize.js';
 import chai from 'chai';
 
-const assert = chai.assert;    
+const describe = chai.describe;
+const it = chai.it;
 const expect = chai.expect;    
-const should = chai.should(); 
+// const assert = chai.assert;    
+// const should = chai.should(); 
 
 describe('capitalize.js', () => {
     const testString = "my test STRING";

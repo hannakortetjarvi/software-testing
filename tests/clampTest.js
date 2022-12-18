@@ -1,5 +1,8 @@
 import clamp from '../src/clamp.js';
 import chai from 'chai';
+
+const describe = chai.describe;
+const it = chai.it;
 const expect = chai.expect;
 
 describe('clamp.js', function() {
