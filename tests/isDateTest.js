@@ -1,5 +1,8 @@
 import isDate from '../src/isDate.js';
 import chai from 'chai';
+
+const describe = chai.describe;
+const it = chai.it;
 const expect = chai.expect;
 
 describe('isDate.js', function() {
