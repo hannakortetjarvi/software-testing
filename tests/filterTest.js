@@ -1,5 +1,9 @@
 import filter from '../src/filter.js';
 import chai from 'chai';
+import Mocha from 'mocha';
+
+const describe = Mocha.describe;
+const it = Mocha.it;
 const expect = chai.expect;
 
 describe('filter.js', function() {

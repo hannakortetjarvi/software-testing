@@ -1,5 +1,9 @@
 import reduce from '../src/reduce.js';
 import chai from 'chai';
+import Mocha from 'mocha';
+
+const describe = Mocha.describe;
+const it = Mocha.it;
 const expect = chai.expect;
 
 describe('reduce.js', function() {
