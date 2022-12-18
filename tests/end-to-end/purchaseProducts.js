@@ -9,7 +9,7 @@ const it = Mocha.it;
 const expect = chai.expect;
 
 describe('purchase products in the shopping cart', function() {
-    it('user uses an OK vouncher', function() {
+    it('user uses an OK voucher', function() {
         let cart = new shoppingCart('1234567890', red_apple.price + green_banana.price, [red_apple, green_banana]);
         const currentDate = Date.now();
 
@@ -29,7 +29,7 @@ describe('purchase products in the shopping cart', function() {
         expect(checkout.finalPrice).to.equal(4.31);
     });
 
-    it('user uses an old vouncher', function() {
+    it('user uses an old voucher', function() {
         let cart = new shoppingCart('1234567890', red_apple.price + green_banana.price, [red_apple, green_banana]);
         const currentDate = Date.now();
 
