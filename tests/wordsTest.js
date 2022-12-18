@@ -22,6 +22,7 @@ describe('words.js', () => {
         
         expect( words("")       ).to.be.an('array');
         expect( words("😊 😊")  ).to.be.an('array');
+        expect( words("hei vaan", undefined)  ).to.be.an('array');
         expect( words("1 2 3")  ).to.be.an('array');
     });
     
