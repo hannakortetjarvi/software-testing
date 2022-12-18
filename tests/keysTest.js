@@ -38,7 +38,7 @@ describe('keys.js', () => {
 
     });
     
-    it('Should convert input to object and return enumerable property names"', () => {
+    it('Should convert input to object and return enumerable property names', () => {
         expect( keys(123)   ).to.be.eql([]);
     });
 
